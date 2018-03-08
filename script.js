@@ -113,9 +113,10 @@ const data = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    let largeTemplate = document.getElementById('lg-card-template');
-    let mediumTemplate = document.getElementById('md-card-template');
-    let smallTemplate = document.getElementById('sm-card-template');
+    const largeTemplate = document.getElementById('lg-card-template');
+    const mediumTemplate = document.getElementById('md-card-template');
+    const smallTemplate = document.getElementById('sm-card-template');
+    const wrapperNode = document.querySelector('.wrapper');
 
     data.forEach((card) => {
         const { size, image, title, titleColor } = card;
@@ -136,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 labelNode.innerHTML = title;
                 labelNode.style.color = titleColor;
-                smallTemplate.parentNode.appendChild(clone);
+                wrapperNode.appendChild(clone);
             }
             break;
 
@@ -150,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 labelNode.innerHTML = title;
                 labelNode.style.color = titleColor;
                 descriptionNode.innerHTML = card.description;
-                smallTemplate.parentNode.appendChild(clone);
+                wrapperNode.appendChild(clone);
             }
             break;
 
@@ -164,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 labelNode.innerHTML = title;
                 labelNode.style.color = titleColor;
                 descriptionNode.innerHTML = card.description;
-                smallTemplate.parentNode.appendChild(clone);
+                wrapperNode.appendChild(clone);
             }
         }
     });
