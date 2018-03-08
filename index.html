@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png">
+    <title>ZEN</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img
+                class="header__logo-image"
+                src="./assets/images/zen_logo@3x.png"
+                alt="Логотип сервиса Яндекс Дзен"
+            />
+        </header>
+        <main class="wrapper">
+            <template id="lg-card-template">
+                <div class="item item_lg">
+                    <img class="large__image" src="" alt="">
+                    <div class="large__content">
+                        <h4 class="large__label YSText-Bold"></h4>
+                        <div class="large__description YSText-Regular">
+                        </div>
+                        <div class="large__icons">
+                            <img src="./assets/images/Actions.png" alt="Actions">
+                            <img class="large__like-icon" src="./assets/images/Heart.png" alt="Like">
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <template id="md-card-template">
+                <div class="item item_md">
+                    <h4 class="medium__label YSText-Bold"></h4>
+                    <img class="medium__image" src="" alt="">
+                    <div class="medium__description-container">
+                        <span class="medium__description-text YSText-Regular">
+                        </span>
+                        <div class="medium__icons-container">
+                            <img class="medium__action-icon" src="./assets/images/Actions.png" alt="Actions">
+                            <img class="medium__like-icon" src="./assets/images/Heart.png" alt="Like">
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <template id="sm-card-template">
+                <div class="item item_sm">
+                    <h4 class="small__label YSText-Bold"></h4>
+                    <img class="small__image" src="" alt="">
+                    <span class="small__description YSText-Regular"></span>
+                    <img src="./assets/images/Heart.png" alt="" class="small__like-icon">
+                </div>
+            </template>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
