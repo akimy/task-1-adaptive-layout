@@ -102,6 +102,7 @@ body, html {
     padding-left: 15px;
     height: 245px;
     padding-right: 10px;
+    grid-template-rows: 1fr 5fr;
 }
 
 .large__label {
@@ -123,6 +124,7 @@ body, html {
     grid-column: span 10;
     text-overflow: clip;
     font-size: 14px;
+    line-height: 20px;
 }
 
 @media (max-width: 700px) {
@@ -240,6 +242,7 @@ body, html {
     max-height: 190px;
     overflow: -webkit-paged-x;
     text-overflow: clip;
+    line-height: 20px;
 }
 
 .small__like-icon {
