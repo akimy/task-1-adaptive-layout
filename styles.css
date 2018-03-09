@@ -45,12 +45,18 @@ body, html {
 .wrapper {
     display: grid;
     width: 100%;
-    grid-template-columns: (2fr 2fr 2fr);
     grid-auto-flow: dense;
     grid-column-gap: 16px;
     grid-auto-rows: 250px;
     grid-auto-columns: 1fr;
     grid-row-gap: 30px;
+}
+
+@media (max-width: 1040px) {
+    .wrapper {
+        grid-auto-rows: 210px;
+        grid-row-gap: 20px;
+    }
 }
 
 .item {
@@ -129,7 +135,8 @@ body, html {
 
 @media (max-width: 700px) {
     .large__description {
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 14px;
     }
 }
 
@@ -188,11 +195,18 @@ body, html {
 .medium__description-text {
     font-size: 14px;
     line-height: 20px;
-    overflow: -webkit-paged-x;
     overflow: hidden;
+    overflow: -webkit-paged-x;
     text-overflow: clip;
     max-height: 62px;
     margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+    .medium__description-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 
 .medium__icons-container {
@@ -244,6 +258,14 @@ body, html {
     text-overflow: clip;
     line-height: 20px;
 }
+
+@media (max-width: 700px) {
+    .small__description {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
 
 .small__like-icon {
     position: absolute;
