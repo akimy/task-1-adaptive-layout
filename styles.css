@@ -104,11 +104,17 @@ body, html {
 .large__content {
     grid-column: span 1;
     grid-row: 1;
-    display: grid;
     padding-left: 15px;
-    height: 245px;
+    height: 235px;
     padding-right: 10px;
-    grid-template-rows: 1fr 5fr;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1040px) {
+    .large__content {
+        height: 200px;
+    }
 }
 
 .large__label {
@@ -141,11 +147,9 @@ body, html {
 }
 
 .large__icons {
-    grid-column: span 10;
-    height: 28px;
-    align-items: center;
+    align-items: flex-end;
     display: flex;
-    align-self: end;
+    flex: 1 1 auto;
 }
 
 .large__like-icon {
