@@ -135,10 +135,10 @@ body, html {
 .large__description {
     overflow: hidden;
     overflow: -webkit-paged-x;
-    grid-column: span 10;
     text-overflow: clip;
     font-size: 14px;
     line-height: 20px;
+    flex-grow: 1;
 }
 
 @media (max-width: 700px) {
