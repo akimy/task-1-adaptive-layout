@@ -113,7 +113,7 @@ body, html {
 
 @media (max-width: 1040px) {
     .large__content {
-        height: 200px;
+        height: 210px;
     }
 }
 
@@ -147,9 +147,9 @@ body, html {
 }
 
 .large__icons {
-    align-items: flex-end;
+    align-items: center;
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
 }
 
 .large__like-icon {
