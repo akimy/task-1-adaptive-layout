@@ -118,9 +118,11 @@ body, html {
 }
 
 .large__label {
-    grid-column: span 10;
     font-size: 19px;
     margin: 0 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
 }
 
 @media (max-width: 700px) {
@@ -149,7 +151,7 @@ body, html {
 .large__icons {
     align-items: center;
     display: flex;
-    flex: 1 0 auto;
+    min-height: 15px;
 }
 
 .large__like-icon {
